@@ -9,7 +9,7 @@ interface LocationContactProps {
 
 const locationData = {
   clasica: {
-    name: "Clásica",
+    name: "Classic",
     tagline: "Elegancia atemporal",
     address: "Calle Lagasca, 58",
     district: "Salamanca · Retiro",
@@ -20,7 +20,7 @@ const locationData = {
       { days: "Domingo", time: "Cerrado" },
     ],
     phone: "+34 600 000 001",
-    instagram: "@hisbarberia.clasica",
+    instagram: "@hisbarberia",
   },
   urban: {
     name: "Urban",
@@ -34,7 +34,7 @@ const locationData = {
       { days: "Domingo", time: "Cerrado" },
     ],
     phone: "+34 600 000 002",
-    instagram: "@hisbarberia.urban",
+    instagram: "@hisbarberia",
   },
 };
 
@@ -171,7 +171,7 @@ export default function LocationContact({ brand }: LocationContactProps) {
                     {loc.phone}
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/hisbarberia/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-sans text-[11px] mt-0.5 transition-colors block"

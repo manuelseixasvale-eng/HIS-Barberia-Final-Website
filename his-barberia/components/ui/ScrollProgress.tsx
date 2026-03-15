@@ -16,7 +16,7 @@ export default function ScrollProgress() {
       className="fixed top-0 left-0 right-0 h-[2px] z-[9999] pointer-events-none"
       aria-hidden
     >
-      {/* Left half: Clásica green */}
+      {/* Left half: Classic green */}
       <div
         className="absolute inset-0"
         style={{

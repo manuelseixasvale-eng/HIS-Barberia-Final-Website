@@ -72,7 +72,7 @@ export default function Booking() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto">
 
-            {/* Clásica card */}
+            {/* Classic card */}
             <motion.button
               onClick={() => setSelected("clasica")}
               whileTap={{ scale: 0.98 }}
@@ -106,7 +106,7 @@ export default function Booking() {
                 <div className="flex items-start justify-between">
                   <div>
                     <h3 className="font-serif text-2xl text-his-white leading-none">
-                      Clásica
+                      Classic
                     </h3>
                     <p className="font-serif italic text-[0.85rem] text-clasica-warm/55 mt-1">
                       Elegancia atemporal
@@ -259,7 +259,7 @@ export default function Booking() {
                 `}
               >
                 <span className="relative z-10 flex items-center gap-3">
-                  Reservar en {selected === "clasica" ? "Clásica" : "Urban"}
+                  Reservar en {selected === "clasica" ? "Classic" : "Urban"}
                   <span className="w-4 h-px bg-current opacity-60 group-hover:w-6 transition-all duration-400" />
                 </span>
                 <div

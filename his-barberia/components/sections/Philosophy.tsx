@@ -134,7 +134,7 @@ export default function Philosophy() {
               expresión distinta del mismo nivel de exigencia.
             </p>
             <p className="font-sans text-[14.5px] text-his-white/45 leading-[1.95] max-w-lg mt-5">
-              Clásica y Urban comparten los mismos valores de fondo: precisión,
+              Classic y Urban comparten los mismos valores de fondo: precisión,
               calidad, atención absoluta. Pero cada uno habla su propio lenguaje.
               Encuentra el tuyo.
             </p>

@@ -23,13 +23,13 @@ const clasicaCuts = [
   {
     name: "Corte + Barba",
     descriptor: "El más solicitado",
-    description: "El servicio estrella de Clásica. Corte a medida y barba perfectamente definida.",
+    description: "El servicio estrella de Classic. Corte a medida y barba perfectamente definida.",
     gradient: "linear-gradient(145deg, #162218 0%, #2D4A3E 50%, #3D6B59 100%)",
   },
   {
     name: "Ritual Completo",
     descriptor: "Experiencia total",
-    description: "Corte, barba y tratamiento facial. La experiencia HIS Clásica en su máxima expresión.",
+    description: "Corte, barba y tratamiento facial. La experiencia HIS Classic en su máxima expresión.",
     gradient: "linear-gradient(145deg, #0d1611 0%, #1a2e20 50%, #2D4A3E 100%)",
   },
 ];

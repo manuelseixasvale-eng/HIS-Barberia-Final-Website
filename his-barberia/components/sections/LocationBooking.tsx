@@ -54,7 +54,7 @@ export default function LocationBooking({ brand }: LocationBookingProps) {
             </span>
           </h2>
           <p className="mt-6 font-sans text-[13.5px] text-his-white/38 max-w-sm mx-auto leading-relaxed">
-            Reserva directamente con el profesional de {isClasica ? "Clásica" : "Urban"} que prefieras.
+            Reserva directamente con el profesional de {isClasica ? "Classic" : "Urban"} que prefieras.
           </p>
         </AnimatedSection>
 
@@ -89,7 +89,7 @@ export default function LocationBooking({ brand }: LocationBookingProps) {
                     className="font-serif leading-none"
                     style={{ fontSize: "1.8rem", color: "#C8BFA8" }}
                   >
-                    Clásica
+                    Classic
                   </h3>
                 ) : (
                   <h3

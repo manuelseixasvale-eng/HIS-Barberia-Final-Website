@@ -20,12 +20,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HIS Barbería — Clásica & Urban | Barbería Premium Madrid",
+  title: "HIS Barbería — Classic & Urban | Barbería Premium Madrid",
   description:
-    "HIS Barbería es una plataforma premium de cuidado masculino con dos espacios únicos en Madrid: Clásica, elegancia atemporal; y Urban, estilo contemporáneo. Reserva tu cita.",
+    "HIS Barbería es una plataforma premium de cuidado masculino con dos espacios únicos en Madrid: Classic, elegancia atemporal; y Urban, estilo contemporáneo. Reserva tu cita.",
   keywords: "barbería madrid, barbería premium, HIS barbería, corte de pelo madrid, afeitado clásico",
   openGraph: {
-    title: "HIS Barbería — Clásica & Urban",
+    title: "HIS Barbería — Classic & Urban",
     description: "El arte del detalle. En dos expresiones.",
     locale: "es_ES",
     type: "website",

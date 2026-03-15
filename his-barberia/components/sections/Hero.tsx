@@ -17,7 +17,7 @@ export default function Hero() {
       {/* ── Background Panels ──────────────────────────────────── */}
       <div className="absolute inset-0 flex flex-col md:flex-row">
 
-        {/* Clásica panel */}
+        {/* Classic panel */}
         <motion.a
           href="/clasica"
           initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export default function Hero() {
           className="relative flex-1 overflow-hidden cursor-pointer"
           onHoverStart={() => setHovered("clasica")}
           onHoverEnd={() => setHovered(null)}
-          aria-label="Ir a HIS Clásica"
+          aria-label="Ir a HIS Classic"
         >
           {/* Photo — breathes on hover */}
           <motion.div
@@ -36,7 +36,7 @@ export default function Hero() {
           >
             <Image
               src={HERO_CLASICA}
-              alt="HIS Barbería Clásica interior"
+              alt="HIS Barbería Classic interior"
               fill
               priority
               style={{ objectFit: "cover", objectPosition: "center 30%" }}
@@ -87,10 +87,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1.2, ease }}
-            className="md:hidden absolute bottom-0 right-0 p-5 flex flex-col items-end gap-0.5 text-right"
+            className="hidden max-md:flex absolute bottom-0 right-0 p-5 flex-col items-end gap-0.5 text-right"
           >
             <span className="font-serif text-[1.7rem] text-clasica-warm/80 leading-none">
-              Clásica
+              Classic
             </span>
             <span className="font-sans text-[8px] tracking-[0.3em] uppercase text-his-white/30 mt-1">
               Elegancia atemporal
@@ -154,7 +154,7 @@ export default function Hero() {
             style={{ background: OVERLAY_URBAN }}
           />
 
-          {/* Recede veil — appears when Clásica is hovered */}
+          {/* Recede veil — appears when Classic is hovered */}
           <motion.div
             className="absolute inset-0 bg-black pointer-events-none"
             animate={{ opacity: hovered === "clasica" ? 0.18 : 0 }}
@@ -197,7 +197,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1.35, ease }}
-            className="md:hidden absolute bottom-0 right-0 p-5 flex flex-col items-end gap-0.5 text-right"
+            className="hidden max-md:flex absolute bottom-0 right-0 p-5 flex-col items-end gap-0.5 text-right"
           >
             <span className="font-sans font-light text-[1.7rem] text-urban-silver/70 leading-none tracking-[-0.03em] uppercase">
               Urban
@@ -277,7 +277,7 @@ export default function Hero() {
         {/* ── Bottom Split — desktop only ──────────────────────── */}
         <div className="hidden md:flex w-full">
 
-          {/* Clásica bottom-left */}
+          {/* Classic bottom-left */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -287,7 +287,7 @@ export default function Hero() {
             <div className="flex flex-col gap-0.5">
               <div className="flex items-center gap-2.5">
                 <span className="font-serif text-[clamp(1.6rem,3.5vw,2.8rem)] text-clasica-warm/80 leading-none">
-                  Clásica
+                  Classic
                 </span>
                 {/* Inline arrow — fades in on hover */}
                 <AnimatePresence>
@@ -377,7 +377,7 @@ export default function Hero() {
           className="flex justify-center pb-3"
         >
           <span className="font-sans text-[7.5px] tracking-[0.5em] uppercase text-his-white/15">
-            Clásica · Urban · Madrid
+            Classic · Urban · Madrid
           </span>
         </motion.div>
       </div>

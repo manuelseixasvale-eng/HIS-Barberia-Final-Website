@@ -6,7 +6,7 @@ import { BOOKSY_CLASICA, BOOKSY_URBAN } from "@/lib/constants";
 const locations = [
   {
     id: "clasica",
-    name: "Clásica",
+    name: "Classic",
     nameSans: false,
     tagline: "Elegancia atemporal",
     address: "Calle Lagasca, 58",
@@ -17,8 +17,8 @@ const locations = [
       { days: "Sábado", time: "10:00 – 19:00" },
       { days: "Domingo", time: "Cerrado" },
     ],
-    phone: "+34 600 000 001",
-    instagram: "@hisbarberia.clasica",
+    phone: "+34 910 734 397",
+    instagram: "@hisbarberia",
     booksy: BOOKSY_CLASICA,
     variant: "clasica" as const,
   },
@@ -36,7 +36,7 @@ const locations = [
       { days: "Domingo", time: "Cerrado" },
     ],
     phone: "+34 600 000 002",
-    instagram: "@hisbarberia.urban",
+    instagram: "@hisbarberia",
     booksy: BOOKSY_URBAN,
     variant: "urban" as const,
   },
@@ -117,7 +117,7 @@ function LocationCard({ location }: { location: (typeof locations)[number] }) {
         }}
       />
 
-      {/* Clásica: linen background texture */}
+      {/* Classic: linen background texture */}
       {isClasica && <div className="absolute inset-0 texture-linen opacity-40" />}
 
       {/* Urban: sharp mid-line accent */}
@@ -200,7 +200,7 @@ function LocationCard({ location }: { location: (typeof locations)[number] }) {
               {location.phone}
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/hisbarberia/"
               target="_blank"
               rel="noopener noreferrer"
               className={`font-sans text-[11px] mt-0.5 transition-colors block ${
@@ -365,15 +365,15 @@ function ContactStrip() {
 
           <div className="flex flex-col items-start md:items-end gap-3">
             <a
-              href="mailto:hola@hisbarberia.es"
+              href="mailto:info@hisbarberia.com"
               className="group font-serif text-[clamp(1.1rem,2.5vw,1.9rem)] text-his-white/60 hover:text-his-white transition-colors duration-400 flex items-center gap-4"
             >
-              hola@hisbarberia.es
+              info@hisbarberia.com
               <span className="w-6 h-px bg-his-white/25 group-hover:w-10 transition-all duration-500 hidden md:block" />
             </a>
             <div className="flex gap-5">
               <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-clasica-warm/40">
-                Clásica: +34 600 000 001
+                Classic: +34 910 734 397
               </span>
               <span className="text-his-white/10">·</span>
               <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-urban-silver/32">

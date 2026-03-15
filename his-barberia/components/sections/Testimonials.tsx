@@ -8,7 +8,7 @@ const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const testimonials = [
   {
-    quote: "Entrar en Clásica es como suspender el tiempo. El corte es perfecto, pero lo que te llevas es algo más difícil de describir.",
+    quote: "Entrar en Classic es como suspender el tiempo. El corte es perfecto, pero lo que te llevas es algo más difícil de describir.",
     author: "Rafael M.",
     title: "Cliente desde 2025",
     brand: "clasica" as const,
@@ -20,7 +20,7 @@ const testimonials = [
     brand: "urban" as const,
   },
   {
-    quote: "El ritual de Clásica no tiene precio. Desde la toalla caliente hasta el acabado — una experiencia que esperas cada semana.",
+    quote: "El ritual de Classic no tiene precio. Desde la toalla caliente hasta el acabado — una experiencia que esperas cada semana.",
     author: "Marcos D.",
     title: "Cliente desde 2025",
     brand: "clasica" as const,
@@ -146,7 +146,7 @@ export default function Testimonials() {
                   {active.author}
                 </span>
                 <span className="font-sans text-[9px] tracking-[0.22em] uppercase text-his-white/22">
-                  {active.title} · HIS {active.brand === "clasica" ? "Clásica" : "Urban"}
+                  {active.title} · HIS {active.brand === "clasica" ? "Classic" : "Urban"}
                 </span>
               </div>
             </motion.div>

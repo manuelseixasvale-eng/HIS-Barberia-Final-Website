@@ -74,28 +74,28 @@ export default function Navbar() {
               </span>
             </a>
 
-            {/* Desktop nav — centered */}
-            <nav className="hidden md:flex items-center gap-9">
+            {/* Desktop nav + CTAs — right aligned */}
+            <div className="hidden md:flex items-center gap-2.5">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="group relative font-sans text-[10.5px] tracking-[0.22em] uppercase text-his-white/45 hover:text-his-white transition-colors duration-300"
+                  className="group relative font-sans text-[10.5px] tracking-[0.22em] uppercase text-his-white/45 hover:text-his-white transition-colors duration-300 px-3"
                 >
                   {link.label}
-                  <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-his-white/40 group-hover:w-full transition-all duration-400" />
+                  <span className="absolute -bottom-0.5 left-3 w-0 h-px bg-his-white/40 group-hover:w-[calc(100%-1.5rem)] transition-all duration-400" />
                 </a>
               ))}
-            </nav>
 
-            {/* Desktop CTAs */}
-            <div className="hidden md:flex items-center gap-2.5">
+              <div className="w-px h-4 bg-his-white/15 mx-2" />
+
+              <div className="flex items-center gap-2.5">
               <a
                 href="/clasica"
                 className="group relative overflow-hidden px-5 py-2.5 font-sans text-[9.5px] tracking-[0.25em] uppercase text-clasica-warm border border-clasica-green/50 hover:border-clasica-green transition-all duration-400"
               >
                 <span className="relative z-10 transition-colors duration-300 group-hover:text-his-white">
-                  Clásica
+                  Classic
                 </span>
                 <div className="absolute inset-0 bg-clasica-green origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400" />
               </a>
@@ -108,6 +108,7 @@ export default function Navbar() {
                 </span>
                 <div className="absolute inset-0 bg-his-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400" />
               </a>
+              </div>
             </div>
 
             {/* Mobile burger */}
@@ -195,7 +196,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="w-full py-4 font-sans text-[10px] tracking-[0.3em] uppercase text-center bg-clasica-green text-his-white hover:bg-clasica-green-light transition-colors duration-300"
                 >
-                  Reservar en Clásica
+                  Reservar en Classic
                 </a>
                 <a
                   href="/urban"
@@ -215,7 +216,7 @@ export default function Navbar() {
               >
                 <div className="h-px flex-1 bg-his-white/8" />
                 <p className="font-sans text-[9px] tracking-[0.35em] uppercase text-his-white/20">
-                  Madrid · Clásica · Urban
+                  Madrid · Classic · Urban
                 </p>
                 <div className="h-px flex-1 bg-his-white/8" />
               </motion.div>

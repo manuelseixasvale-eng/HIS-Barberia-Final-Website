@@ -13,7 +13,7 @@ const config: Config = {
         "his-black": "#0A0A0A",
         "his-white": "#F5F3EF",
         "his-cream": "#EDE8E0",
-        // Clásica
+        // Classic
         "clasica-green": "#2D4A3E",
         "clasica-green-light": "#3D6B59",
         "clasica-green-deep": "#1E3329",

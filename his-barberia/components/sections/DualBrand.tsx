@@ -46,7 +46,7 @@ export default function DualBrand() {
         {/* Cards — 2px gap, flex for hover expansion */}
         <div className="flex flex-col md:flex-row gap-[2px]" style={{ minHeight: "72vh" }}>
 
-          {/* ── Clásica ─────────────────────────────────────────── */}
+          {/* ── Classic ─────────────────────────────────────────── */}
           <div
             className="min-h-[400px] md:min-h-0"
             style={{ flex: clasicaFlex, transition: "flex 0.7s cubic-bezier(0.22, 1, 0.36, 1)" }}
@@ -63,7 +63,7 @@ export default function DualBrand() {
               {/* Photo */}
               <Image
                 src={DUAL_CLASICA}
-                alt="HIS Barbería Clásica espacio"
+                alt="HIS Barbería Classic espacio"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center 40%" }}
               />
@@ -123,7 +123,7 @@ export default function DualBrand() {
                     className="font-serif text-his-white leading-none tracking-[-0.02em]"
                     style={{ fontSize: "clamp(3.2rem, 6vw, 5.8rem)" }}
                   >
-                    Clásica
+                    Classic
                   </h3>
                   <div className="mt-3 w-10 h-px bg-clasica-warm/35" />
                 </div>

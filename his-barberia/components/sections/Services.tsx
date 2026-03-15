@@ -8,12 +8,11 @@ import { CLASICA_SERVICES, URBAN_SERVICES, BOOKSY_CLASICA, BOOKSY_URBAN } from "
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 // Mark a "featured" service per category
-const FEATURED: Record<string, string> = {
-  "Corte + Barba": true,
-  "Ritual completo": true,
-  "Degradado": true,
-  "Coloración": true,
-} as unknown as Record<string, string>;
+const FEATURED: Record<string, boolean> = {
+  "Corte Caballero y Arreglo de Barba": true,
+  "Tratamiento Antiaging": true,
+  "Arreglo de Barba y Contorno de Ojos": true,
+};
 
 export default function Services() {
   const [active, setActive] = useState<"clasica" | "urban">("clasica");
@@ -80,7 +79,7 @@ export default function Services() {
                       isClasica ? "text-clasica-warm" : "text-his-white/30 group-hover:text-his-white/60"
                     }`}
                   >
-                    Clásica
+                    Classic
                   </span>
                   <span
                     className={`font-sans text-[7.5px] tracking-[0.3em] uppercase transition-colors duration-400 ${
@@ -168,9 +167,11 @@ export default function Services() {
                               </span>
                             )}
                           </div>
-                          <span className="font-sans text-[10.5px] text-his-white/28 leading-relaxed">
-                            {item.description}
-                          </span>
+                          {item.description && (
+                            <span className="font-sans text-[10.5px] text-his-white/28 leading-relaxed">
+                              {item.description}
+                            </span>
+                          )}
                         </div>
 
                         <div className="flex items-center gap-3 mt-0.5 flex-shrink-0">
@@ -212,7 +213,7 @@ export default function Services() {
                 }
               `}
             >
-              Reservar en {isClasica ? "Clásica" : "Urban"}
+              Reservar en {isClasica ? "Classic" : "Urban"}
               <span className="w-4 h-px bg-current opacity-50 group-hover:w-7 transition-all duration-400" />
             </a>
           </div>

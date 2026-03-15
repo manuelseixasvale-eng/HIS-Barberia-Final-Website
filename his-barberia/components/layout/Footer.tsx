@@ -55,7 +55,7 @@ export default function Footer() {
             </p>
             <div className="mt-1">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/hisbarberia/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2.5 font-sans text-[9.5px] tracking-[0.28em] uppercase text-his-white/28 hover:text-his-white transition-colors duration-400"
@@ -88,7 +88,7 @@ export default function Footer() {
               Nuestros Espacios
             </span>
 
-            {/* Clásica */}
+            {/* Classic */}
             <div className="flex flex-col gap-1">
               <a
                 href={BOOKSY_CLASICA}
@@ -96,7 +96,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="font-serif text-[1.25rem] text-clasica-warm/70 hover:text-clasica-warm transition-colors duration-300 leading-none"
               >
-                Clásica
+                Classic
               </a>
               <span className="font-sans text-[10px] text-his-white/25 mt-1">
                 Calle Lagasca, 58 · Madrid

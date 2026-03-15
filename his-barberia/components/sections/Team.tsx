@@ -9,7 +9,7 @@ import { TEAM_PHOTOS } from "@/lib/photos";
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function Team() {
-  const clasicaMembers = TEAM_MEMBERS.filter((m) => m.location === "Clásica");
+  const clasicaMembers = TEAM_MEMBERS.filter((m) => m.location === "Classic");
   const urbanMembers = TEAM_MEMBERS.filter((m) => m.location === "Urban");
 
   return (
@@ -36,12 +36,12 @@ export default function Team() {
           </p>
         </AnimatedSection>
 
-        {/* Clásica team */}
+        {/* Classic team */}
         <AnimatedSection delay={0.1} className="mb-16">
           <div className="flex items-center gap-4 mb-8">
             <div className="w-1 h-1 rounded-full bg-clasica-warm/50" />
             <span className="font-sans text-[8.5px] tracking-[0.45em] uppercase text-clasica-warm/50">
-              Clásica
+              Classic
             </span>
             <div className="flex-1 h-px bg-clasica-green/18" />
           </div>
@@ -120,7 +120,7 @@ function TeamCard({ member, index, delay, variant, photo }: TeamCardProps) {
 
         {/* Pattern overlay */}
         {isClasica ? (
-          /* Clásica: concentric rings ornament */
+          /* Classic: concentric rings ornament */
           <div
             className="absolute inset-0"
             style={{

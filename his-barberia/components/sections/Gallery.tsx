@@ -41,12 +41,12 @@ export default function Gallery() {
         </AnimatedSection>
       </div>
 
-      {/* Clásica group */}
+      {/* Classic group */}
       <div className="px-6 md:px-10 lg:px-16 max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-5">
           <div className="w-1 h-1 rounded-full bg-clasica-warm/45" />
           <span className="font-sans text-[8.5px] tracking-[0.45em] uppercase text-clasica-warm/45">
-            Clásica
+            Classic
           </span>
           <div className="flex-1 h-px bg-clasica-green/15" />
         </div>
@@ -84,7 +84,7 @@ export default function Gallery() {
         <AnimatedSection delay={0.2} className="flex items-center gap-6">
           <div className="h-px flex-1 bg-his-white/5" />
           <p className="font-sans text-[8px] tracking-[0.45em] uppercase text-his-white/15">
-            Clásica · Urban · Madrid
+            Classic · Urban · Madrid
           </p>
           <div className="h-px flex-1 bg-his-white/5" />
         </AnimatedSection>
@@ -136,7 +136,7 @@ function GalleryCell({ item, className = "", variant, delay }: GalleryCellProps)
         }}
       />
 
-      {/* Clásica: warm corner flare */}
+      {/* Classic: warm corner flare */}
       {isClasica && (
         <div
           className="absolute inset-0 pointer-events-none"
@@ -146,7 +146,7 @@ function GalleryCell({ item, className = "", variant, delay }: GalleryCellProps)
         />
       )}
 
-      {/* Clásica: linen texture */}
+      {/* Classic: linen texture */}
       {isClasica && (
         <div className="absolute inset-0 texture-linen opacity-50" />
       )}
@@ -211,12 +211,12 @@ function GalleryCell({ item, className = "", variant, delay }: GalleryCellProps)
               isClasica ? "text-clasica-warm/30" : "text-urban-silver/22"
             }`}
           >
-            {isClasica ? "Clásica" : "Urban"}
+            {isClasica ? "Classic" : "Urban"}
           </span>
         </div>
       </div>
 
-      {/* Clásica corner ornament on hover */}
+      {/* Classic corner ornament on hover */}
       {isClasica && (
         <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-clasica-warm/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
       )}

@@ -13,11 +13,11 @@ export const DUAL_URBAN =
 
 // ── Team portraits ─────────────────────────────────────────────────
 export const TEAM_PHOTOS = [
-  // Clásica 1 – Alejandro
+  // Classic 1 – Alejandro
   "/team/barber-1.webp",
-  // Clásica 2 – David
+  // Classic 2 – David
   "/team/barber-2.webp",
-  // Clásica 3 – Marcos
+  // Classic 3 – Marcos
   "/team/barber-3.webp",
   // Urban 1 – Nico
   "/team/barber-4.webp",
@@ -29,11 +29,11 @@ export const TEAM_PHOTOS = [
 
 // ── Gallery ────────────────────────────────────────────────────────
 export const GALLERY_PHOTOS = [
-  // Clásica 01 – Afeitado clásico
+  // Classic 01 – Afeitado clásico
   "/gallery/afeitado-clasico.webp",
-  // Clásica 02 – El ritual
+  // Classic 02 – El ritual
   "/gallery/el-ritual.jpg",
-  // Clásica 03 – Precisión
+  // Classic 03 – Precisión
   "/gallery/precision.webp",
   // Urban 04 – Fade perfecto
   `${UNS}/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80`,

@@ -76,7 +76,7 @@ export default function LocationHero({ brand }: LocationHeroProps) {
             className="font-sans text-[8.5px] tracking-[0.38em] uppercase"
             style={{ color: isClasica ? "rgba(200,191,168,0.55)" : "rgba(184,184,184,0.45)" }}
           >
-            {isClasica ? "Clásica" : "Urban"}
+            {isClasica ? "Classic" : "Urban"}
           </span>
         </motion.div>
 
@@ -100,7 +100,7 @@ export default function LocationHero({ brand }: LocationHeroProps) {
                 color: isClasica ? "#C8BFA8" : "#B8B8B8",
               }}
             >
-              {isClasica ? "Clásica" : "Urban"}
+              {isClasica ? "Classic" : "Urban"}
             </motion.h1>
           </div>
 
