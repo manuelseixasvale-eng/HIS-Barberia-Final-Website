@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Custom Properties ─────────────────────────────────────────── */
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --his-black: #0A0A0A;
+  --his-white: #F5F3EF;
+  --his-cream: #EDE8E0;
+  --clasica-green: #2D4A3E;
+  --clasica-green-light: #3D6B59;
+  --clasica-green-deep: #1E3329;
+  --clasica-warm: #C8BFA8;
+  --urban-charcoal: #1A1A1A;
+  --urban-silver: #B8B8B8;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background: var(--his-black);
+  color: var(--his-white);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Global Grain Overlay ──────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.028;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Typography Base ───────────────────────────────────────────── */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+p {
+  font-family: var(--font-inter);
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--his-black);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2D4A3E, #1A1A1A);
+  border-radius: 0;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────── */
+::selection {
+  background: #2D4A3E;
+  color: #F5F3EF;
+}
+
+/* ─── Marquee Animation ─────────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Word Reveal Animation ─────────────────────────────────────── */
+@keyframes wordReveal {
+  0%   { transform: translateY(110%); opacity: 0; }
+  100% { transform: translateY(0);    opacity: 1; }
+}
+
+.word-reveal {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.word-reveal span {
+  display: inline-block;
+  animation: wordReveal 0.85s var(--ease-premium) both;
+}
+
+
+/* ─── Utilities ─────────────────────────────────────────────────── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-serif {
+    font-family: var(--font-cormorant);
+  }
+
+  .font-sans {
+    font-family: var(--font-inter);
+  }
+
+  /* Premium divider */
+  .divider-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(245, 243, 239, 0.12), transparent);
+  }
+
+  .divider-line-clasica {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(45, 74, 62, 0.5), transparent);
+  }
+
+  /* Section padding */
+  .section-pad {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  @media (max-width: 768px) {
+    .section-pad {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  /* Linen texture for Clásica panels */
+  .texture-linen {
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(200,191,168,0.018) 2px,
+        rgba(200,191,168,0.018) 3px
+      );
+  }
+
+  /* Urban diagonal lines */
+  .texture-urban {
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 18px,
+        rgba(184,184,184,0.028) 18px,
+        rgba(184,184,184,0.028) 19px
+      );
+  }
+}
