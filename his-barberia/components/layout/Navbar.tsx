@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import { NAV_LINKS } from "@/lib/constants";
@@ -8,6 +9,11 @@ import { NAV_LINKS } from "@/lib/constants";
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const brand = pathname.startsWith('/clasica') ? 'clasica'
+              : pathname.startsWith('/urban')   ? 'urban'
+              : null;
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -72,6 +78,20 @@ export default function Navbar() {
               <span className="font-sans text-[7.5px] tracking-[0.42em] uppercase text-his-white/40 group-hover:text-his-white/70 transition-colors duration-500 -mt-0.5">
                 Barbería
               </span>
+              {brand && (
+                <>
+                  <div className="mt-1 mb-0.5 h-px w-full" style={{ backgroundColor: brand === 'clasica' ? '#C8BFA8' : '#B8B8B8', opacity: 0.4 }} />
+                  {brand === 'clasica' ? (
+                    <span className="font-serif text-[6.5px] tracking-[0.45em] uppercase font-light" style={{ color: '#C8BFA8' }}>
+                      Classic
+                    </span>
+                  ) : (
+                    <span className="font-sans text-[6.5px] tracking-[0.45em] uppercase font-semibold" style={{ color: '#B8B8B8' }}>
+                      Urban
+                    </span>
+                  )}
+                </>
+              )}
             </a>
 
             {/* Desktop nav + CTAs — right aligned */}
