@@ -67,7 +67,7 @@ export default function Testimonials() {
     <section
       className="relative overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #0A0A0A 0%, #08100c 50%, #0A0A0A 100%)",
+        background: "linear-gradient(180deg, #0A0A0A 0%, #0b1810 50%, #0A0A0A 100%)",
         minHeight: "70vh",
       }}
     >
@@ -76,8 +76,8 @@ export default function Testimonials() {
         className="absolute inset-0 pointer-events-none"
         animate={{
           background: isClasica
-            ? "radial-gradient(ellipse at 35% 50%, rgba(45,74,62,0.12) 0%, transparent 60%)"
-            : "radial-gradient(ellipse at 65% 50%, rgba(184,184,184,0.05) 0%, transparent 60%)",
+            ? "radial-gradient(ellipse at 35% 50%, rgba(45,74,62,0.18) 0%, transparent 60%)"
+            : "radial-gradient(ellipse at 65% 50%, rgba(184,184,184,0.09) 0%, transparent 60%)",
         }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
       />

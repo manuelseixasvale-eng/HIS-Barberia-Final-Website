@@ -70,8 +70,8 @@ export default function Haircuts({ brand }: HaircutsProps) {
       className="relative section-pad overflow-hidden"
       style={{
         background: isClasica
-          ? "linear-gradient(180deg, #0A0A0A 0%, #080e0a 100%)"
-          : "linear-gradient(180deg, #0A0A0A 0%, #080808 100%)",
+          ? "linear-gradient(180deg, #0A0A0A 0%, #0c1810 50%, #0e1d12 100%)"
+          : "linear-gradient(180deg, #0A0A0A 0%, #111111 50%, #0f0f0f 100%)",
       }}
     >
       {/* Ambient */}
@@ -79,8 +79,8 @@ export default function Haircuts({ brand }: HaircutsProps) {
         className="absolute inset-0 pointer-events-none"
         style={{
           background: isClasica
-            ? "radial-gradient(ellipse at 80% 20%, rgba(45,74,62,0.08) 0%, transparent 55%)"
-            : "radial-gradient(ellipse at 20% 80%, rgba(184,184,184,0.03) 0%, transparent 55%)",
+            ? "radial-gradient(ellipse at 80% 20%, rgba(45,74,62,0.16) 0%, transparent 60%)"
+            : "radial-gradient(ellipse at 20% 80%, rgba(184,184,184,0.07) 0%, transparent 60%)",
         }}
       />
 

@@ -55,14 +55,14 @@ export default function Philosophy() {
       id="filosofia"
       className="relative section-pad overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #0A0A0A 0%, #0c140f 40%, #0A0A0A 100%)",
+        background: "linear-gradient(180deg, #0A0A0A 0%, #0f1c12 40%, #0A0A0A 100%)",
       }}
     >
       {/* Very subtle green breath */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at 30% 60%, rgba(45,74,62,0.1) 0%, transparent 60%)",
+          background: "radial-gradient(ellipse at 30% 60%, rgba(45,74,62,0.16) 0%, transparent 60%)",
         }}
       />
 

@@ -23,15 +23,19 @@ export default function LocationServices({ brand }: LocationServicesProps) {
     <section
       id="precios"
       className="relative section-pad overflow-hidden"
-      style={{ background: "#0A0A0A" }}
+      style={{
+        background: isClasica
+          ? "linear-gradient(180deg, #080e0a 0%, #0c1810 50%, #080e0a 100%)"
+          : "linear-gradient(180deg, #0A0A0A 0%, #111111 50%, #0A0A0A 100%)",
+      }}
     >
       {/* Ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background: isClasica
-            ? "radial-gradient(ellipse at 5% 40%, rgba(45,74,62,0.1) 0%, transparent 55%)"
-            : "radial-gradient(ellipse at 95% 40%, rgba(184,184,184,0.04) 0%, transparent 55%)",
+            ? "radial-gradient(ellipse at 5% 40%, rgba(45,74,62,0.20) 0%, transparent 60%)"
+            : "radial-gradient(ellipse at 95% 40%, rgba(184,184,184,0.09) 0%, transparent 60%)",
         }}
       />
 
