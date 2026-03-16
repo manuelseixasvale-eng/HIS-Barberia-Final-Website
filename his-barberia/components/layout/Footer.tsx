@@ -138,14 +138,14 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-5">
             <a
-              href="#"
+              href="/privacidad"
               className="font-sans text-[9.5px] tracking-[0.15em] uppercase text-his-white/18 hover:text-his-white/45 transition-colors"
             >
               Privacidad
             </a>
             <span className="text-his-white/10 text-xs">·</span>
             <a
-              href="#"
+              href="/aviso-legal"
               className="font-sans text-[9.5px] tracking-[0.15em] uppercase text-his-white/18 hover:text-his-white/45 transition-colors"
             >
               Aviso legal
