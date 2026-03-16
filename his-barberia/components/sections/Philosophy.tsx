@@ -13,7 +13,7 @@ const quoteWords2 = ["Es", "cómo", "te", "ves"];
 const quoteWords3 = ["cuando", "importa."];
 
 const stats = [
-  { value: "MMXXV", label: "Fundación" },
+  { value: "MMXXI", label: "Fundación" },
   { value: "Dos", label: "Espacios en Madrid" },
   { value: "Uno", label: "Estándar de exigencia" },
 ];

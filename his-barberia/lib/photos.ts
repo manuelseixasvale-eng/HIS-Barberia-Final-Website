@@ -43,6 +43,9 @@ export const GALLERY_PHOTOS = [
   `${UNS}/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80`,
 ];
 
+// ── Location heroes ────────────────────────────────────────────────
+export const CLASICA_INTERIOR = "/photos/clasica-interior.jpg";
+
 // ── Overlay values ─────────────────────────────────────────────────
 export const OVERLAY_CLASICA = "rgba(26, 46, 34, 0.75)";
 export const OVERLAY_URBAN   = "rgba(10, 10, 10, 0.65)";
