@@ -320,7 +320,7 @@ function LocationCard({ location }: { location: (typeof locations)[number] }) {
             font-sans text-[9.5px] tracking-[0.3em] uppercase
             transition-all duration-400
             ${isClasica
-              ? "bg-clasica-green text-his-white hover:bg-clasica-green-light"
+              ? "border border-clasica-warm/20 text-clasica-warm/55 hover:border-clasica-warm/40 hover:text-clasica-warm/80"
               : "border border-his-white/10 text-his-white/55 hover:border-his-white/30 hover:text-his-white"
             }
           `}

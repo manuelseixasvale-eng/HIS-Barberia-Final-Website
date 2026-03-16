@@ -274,7 +274,7 @@ export default function LocationContact({ brand }: LocationContactProps) {
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center gap-4 w-full py-4 font-sans text-[9.5px] tracking-[0.3em] uppercase transition-all duration-400"
                 style={isClasica
-                  ? { background: "#2D4A3E", color: "#F5F3EF" }
+                  ? { border: "1px solid rgba(200,191,168,0.2)", color: "rgba(200,191,168,0.55)" }
                   : { border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.55)" }
                 }
               >

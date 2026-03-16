@@ -248,27 +248,19 @@ export default function Booking() {
                 onClick={handleBook}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className={`
-                  group relative overflow-hidden px-12 py-5
-                  font-sans text-[10.5px] tracking-[0.35em] uppercase
-                  transition-all duration-400
-                  ${selected === "clasica"
-                    ? "bg-clasica-green text-his-white"
-                    : "bg-his-white text-his-black"
-                  }
-                `}
+                className="group relative overflow-hidden px-12 py-5 font-sans text-[10.5px] tracking-[0.35em] uppercase transition-all duration-400"
+                style={selected === "clasica"
+                  ? { border: "1px solid rgba(200,191,168,0.2)", color: "rgba(200,191,168,0.55)" }
+                  : { background: "#F5F3EF", color: "#0A0A0A" }
+                }
               >
                 <span className="relative z-10 flex items-center gap-3">
                   Reservar en {selected === "clasica" ? "Classic" : "Urban"}
                   <span className="w-4 h-px bg-current opacity-60 group-hover:w-6 transition-all duration-400" />
                 </span>
-                <div
-                  className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 ${
-                    selected === "clasica"
-                      ? "bg-clasica-green-light"
-                      : "bg-his-cream"
-                  }`}
-                />
+                {selected !== "clasica" && (
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 bg-his-cream" />
+                )}
               </motion.button>
 
               <p className="font-sans text-[9.5px] text-his-white/18 tracking-wide">

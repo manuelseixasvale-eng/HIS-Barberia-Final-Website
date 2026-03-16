@@ -192,6 +192,20 @@ export default function Hero() {
             U
           </div>
 
+          {/* Large watermark H — bottom-right */}
+          <div
+            className="absolute -bottom-12 -right-8 font-sans leading-none select-none pointer-events-none uppercase"
+            style={{
+              fontSize: "clamp(14rem, 28vw, 26rem)",
+              fontWeight: 300,
+              color: "rgba(184,184,184,0.05)",
+              letterSpacing: "-0.04em",
+            }}
+            aria-hidden
+          >
+            H
+          </div>
+
           {/* Mobile label — bottom-right of this panel */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
