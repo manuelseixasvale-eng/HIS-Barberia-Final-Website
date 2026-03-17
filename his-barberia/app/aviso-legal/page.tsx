@@ -15,7 +15,7 @@ const SECTIONS: LegalSection[] = [
     heading: "Titular del Sitio Web",
     paragraphs: [
       "En cumplimiento de lo establecido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa al usuario de los datos identificativos del titular de este sitio web:",
-      "<strong>Razón social:</strong> [NOMBRE EMPRESA]<br/><strong>CIF/NIF:</strong> [CIF]<br/><strong>Domicilio social:</strong> [DIRECCIÓN], Madrid<br/><strong>Correo electrónico:</strong> <a href='mailto:[EMAIL]' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>[EMAIL]</a>",
+      "<strong>Titular:</strong> Nilda María Coronel Duarte<br/><strong>NIF:</strong> 06698856Z<br/><strong>Domicilio social:</strong> [DIRECCIÓN], Madrid<br/><strong>Correo electrónico:</strong> <a href='mailto:info@hisbarberia.com' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>info@hisbarberia.com</a>",
     ],
   },
   {
@@ -23,7 +23,7 @@ const SECTIONS: LegalSection[] = [
     label: "Objeto",
     heading: "Objeto y Ámbito de Aplicación",
     paragraphs: [
-      "El presente Aviso Legal regula el acceso y uso del sitio web <strong>hisbarberia.com</strong> (en adelante, «el Sitio Web»), cuya titularidad corresponde a [NOMBRE EMPRESA].",
+      "El presente Aviso Legal regula el acceso y uso del sitio web <strong>hisbarberia.com</strong> (en adelante, «el Sitio Web»), cuya titularidad corresponde a Nilda María Coronel Duarte.",
       "El acceso al Sitio Web y la utilización de sus contenidos implica la aceptación plena y sin reservas de las presentes condiciones. El titular se reserva el derecho a modificar en cualquier momento el contenido del Aviso Legal, siendo responsabilidad del usuario revisar periódicamente las condiciones vigentes.",
     ],
   },
@@ -32,7 +32,7 @@ const SECTIONS: LegalSection[] = [
     label: "Propiedad Intelectual",
     heading: "Propiedad Intelectual e Industrial",
     paragraphs: [
-      "Todos los contenidos del Sitio Web —incluyendo, sin carácter limitativo, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, enlaces y demás contenidos audiovisuales o sonoros— son propiedad de [NOMBRE EMPRESA] o de terceros que han autorizado su uso, y están protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.",
+      "Todos los contenidos del Sitio Web —incluyendo, sin carácter limitativo, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, enlaces y demás contenidos audiovisuales o sonoros— son propiedad de Nilda María Coronel Duarte o de terceros que han autorizado su uso, y están protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.",
       "Queda expresamente prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otra forma de explotación, total o parcial, de los contenidos del Sitio Web sin la autorización previa y por escrito del titular. El uso no autorizado de dichos contenidos podrá dar lugar al ejercicio de las acciones legales que correspondan.",
     ],
   },
@@ -41,7 +41,7 @@ const SECTIONS: LegalSection[] = [
     label: "Responsabilidad",
     heading: "Exención de Responsabilidad",
     paragraphs: [
-      "[NOMBRE EMPRESA] no garantiza la disponibilidad ininterrumpida del Sitio Web ni la ausencia de errores en sus contenidos. El titular no será responsable de los daños o perjuicios que pudieran derivarse del uso del Sitio Web, de la imposibilidad de acceso al mismo, o de la presencia de virus u otros elementos lesivos en los contenidos.",
+      "Nilda María Coronel Duarte no garantiza la disponibilidad ininterrumpida del Sitio Web ni la ausencia de errores en sus contenidos. El titular no será responsable de los daños o perjuicios que pudieran derivarse del uso del Sitio Web, de la imposibilidad de acceso al mismo, o de la presencia de virus u otros elementos lesivos en los contenidos.",
       "La información publicada en el Sitio Web tiene carácter meramente informativo. El titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido, la configuración o los servicios del Sitio Web en cualquier momento sin necesidad de previo aviso.",
     ],
   },
@@ -50,8 +50,8 @@ const SECTIONS: LegalSection[] = [
     label: "Terceros",
     heading: "Enlaces a Sitios de Terceros",
     paragraphs: [
-      "El Sitio Web puede contener enlaces a sitios web de terceros. Estos enlaces se facilitan únicamente a efectos informativos. [NOMBRE EMPRESA] no tiene control sobre los contenidos de esos sitios y no asume responsabilidad alguna por los contenidos, información, comunicaciones o actividades de dichos sitios.",
-      "La inclusión de cualquier enlace no implica la aprobación por parte del titular del sitio enlazado ni la existencia de relación alguna entre [NOMBRE EMPRESA] y los titulares de dichos sitios.",
+      "El Sitio Web puede contener enlaces a sitios web de terceros. Estos enlaces se facilitan únicamente a efectos informativos. Nilda María Coronel Duarte no tiene control sobre los contenidos de esos sitios y no asume responsabilidad alguna por los contenidos, información, comunicaciones o actividades de dichos sitios.",
+      "La inclusión de cualquier enlace no implica la aprobación por parte del titular del sitio enlazado ni la existencia de relación alguna entre Nilda María Coronel Duarte y los titulares de dichos sitios.",
     ],
   },
   {

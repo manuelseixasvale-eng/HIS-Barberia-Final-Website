@@ -15,7 +15,7 @@ const SECTIONS: LegalSection[] = [
     heading: "Responsable del Tratamiento",
     paragraphs: [
       "De conformidad con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos de los datos del responsable del tratamiento:",
-      "<strong>Responsable:</strong> [NOMBRE EMPRESA]<br/><strong>CIF/NIF:</strong> [CIF]<br/><strong>Domicilio:</strong> [DIRECCIÓN], Madrid<br/><strong>Correo electrónico de contacto:</strong> <a href='mailto:[EMAIL]' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>[EMAIL]</a>",
+      "<strong>Responsable:</strong> Nilda María Coronel Duarte<br/><strong>NIF:</strong> 06698856Z<br/><strong>Domicilio:</strong> [DIRECCIÓN], Madrid<br/><strong>Correo electrónico de contacto:</strong> <a href='mailto:info@hisbarberia.com' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>info@hisbarberia.com</a>",
     ],
   },
   {
@@ -41,7 +41,7 @@ const SECTIONS: LegalSection[] = [
     label: "Destinatarios",
     heading: "Destinatarios y Transferencias Internacionales",
     paragraphs: [
-      "Los datos podrán ser comunicados a los siguientes encargados del tratamiento que actúan en nombre de [NOMBRE EMPRESA]:",
+      "Los datos podrán ser comunicados a los siguientes encargados del tratamiento que actúan en nombre de Nilda María Coronel Duarte:",
       "<strong>Booksy International Inc.</strong> — plataforma de gestión de reservas. Los datos transferidos se limitan a los estrictamente necesarios para gestionar la cita.<br/><br/><strong>Vercel Inc.</strong> — proveedor de infraestructura de alojamiento web y analítica de rendimiento. Los datos de navegación recogidos son anónimos o seudonimizados.",
       "No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo (EEE) sin las garantías adecuadas. Booksy y Vercel cuentan con cláusulas contractuales tipo aprobadas por la Comisión Europea u otro mecanismo de adecuación equivalente.",
     ],
@@ -62,7 +62,7 @@ const SECTIONS: LegalSection[] = [
     paragraphs: [
       "El usuario puede ejercitar en cualquier momento los siguientes derechos reconocidos por el RGPD y la LOPDGDD:",
       "<strong>Acceso</strong> a sus datos personales · <strong>Rectificación</strong> de datos inexactos · <strong>Supresión</strong> («derecho al olvido») · <strong>Limitación</strong> del tratamiento · <strong>Portabilidad</strong> de los datos · <strong>Oposición</strong> al tratamiento · <strong>No ser objeto</strong> de decisiones automatizadas",
-      "Para ejercitar cualquiera de estos derechos, puede dirigirse por escrito a <a href='mailto:[EMAIL]' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>[EMAIL]</a>, adjuntando copia de su documento de identidad. En caso de que no obtenga una respuesta satisfactoria, tiene derecho a presentar una reclamación ante la <a href='https://www.aepd.es' target='_blank' rel='noopener noreferrer' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>Agencia Española de Protección de Datos (AEPD)</a>.",
+      "Para ejercitar cualquiera de estos derechos, puede dirigirse por escrito a <a href='mailto:info@hisbarberia.com' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>info@hisbarberia.com</a>, adjuntando copia de su documento de identidad. En caso de que no obtenga una respuesta satisfactoria, tiene derecho a presentar una reclamación ante la <a href='https://www.aepd.es' target='_blank' rel='noopener noreferrer' class='text-his-white/60 hover:text-his-white underline underline-offset-2 transition-colors'>Agencia Española de Protección de Datos (AEPD)</a>.",
     ],
   },
   {
@@ -70,7 +70,7 @@ const SECTIONS: LegalSection[] = [
     label: "Seguridad",
     heading: "Medidas de Seguridad",
     paragraphs: [
-      "[NOMBRE EMPRESA] ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos almacenados y los riesgos a que están expuestos.",
+      "Nilda María Coronel Duarte ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos almacenados y los riesgos a que están expuestos.",
       "La transmisión de datos entre el usuario y el Sitio Web se realiza mediante protocolo seguro HTTPS con cifrado TLS. No obstante, ningún sistema de transmisión de datos a través de internet puede garantizar una seguridad absoluta.",
     ],
   },

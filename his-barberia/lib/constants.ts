@@ -4,7 +4,7 @@ export const NAV_LINKS = [
 ];
 
 export const BOOKSY_CLASICA = "https://booksy.com/en-es/108264_his-barberia_barberia_53009_madrid#ba_s=sh_1";
-export const BOOKSY_URBAN = "https://booksy.com/en-es/108264_his-barberia_barberia_53009_madrid#ba_s=sh_1";
+export const BOOKSY_URBAN = "https://booksy.com/es-es/174168_his-barberia-urban_barberia_53009_madrid#ba_s=sh_1";
 
 export const CLASICA_SERVICES = [
   {
