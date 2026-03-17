@@ -102,7 +102,7 @@ export default function Footer() {
                 Calle Lagasca, 58 · Madrid
               </span>
               <span className="font-sans text-[9.5px] text-his-white/18">
-                10:00 – 20:00 · Lu–Vi
+                10:00 – 20:30 · Lu–Vi · Sá 10–14
               </span>
             </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
                 Calle San Marcos, 1 · Madrid
               </span>
               <span className="font-sans text-[9.5px] text-his-white/18">
-                10:00 – 21:00 · Lu–Vi
+                10:00 – 21:00 · Lu–Sá
               </span>
             </div>
           </div>

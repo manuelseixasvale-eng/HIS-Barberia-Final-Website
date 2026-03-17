@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import { NAV_LINKS } from "@/lib/constants";
 
@@ -67,30 +68,33 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="group flex flex-col leading-none"
             >
-              <span className="font-serif text-[1.6rem] tracking-[0.04em]" style={{
-                background: 'linear-gradient(135deg, #8B6520 0%, #C9A84C 30%, #F0D878 55%, #C9A84C 75%, #8B6520 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                HIS
-              </span>
-              <span className="font-sans text-[7.5px] tracking-[0.42em] uppercase text-his-white/40 group-hover:text-his-white/70 transition-colors duration-500 -mt-0.5">
-                Barbería
-              </span>
-              {brand && (
-                <>
-                  <div className="mt-1 mb-0.5 h-px w-full" style={{ backgroundColor: brand === 'clasica' ? '#C8BFA8' : '#B8B8B8', opacity: 0.4 }} />
-                  {brand === 'clasica' ? (
-                    <span className="font-serif text-[6.5px] tracking-[0.45em] uppercase font-light" style={{ color: '#C8BFA8' }}>
-                      Classic
-                    </span>
-                  ) : (
-                    <span className="font-sans text-[6.5px] tracking-[0.45em] uppercase font-semibold" style={{ color: '#B8B8B8' }}>
-                      Urban
-                    </span>
-                  )}
-                </>
+              {brand === 'clasica' ? (
+                <Image
+                  src="/logo-classic.png"
+                  alt="HIS Barbería Classic"
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                  priority
+                />
+              ) : brand === 'urban' ? (
+                <Image
+                  src="/logo-urban.png"
+                  alt="HIS Barbería Urban"
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                  priority
+                />
+              ) : (
+                <Image
+                  src="/logo-main.png"
+                  alt="HIS Barbería"
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                  priority
+                />
               )}
             </a>
 

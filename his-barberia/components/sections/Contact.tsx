@@ -13,8 +13,8 @@ const locations = [
     district: "Salamanca · Retiro",
     city: "Madrid",
     hours: [
-      { days: "Lu — Vi", time: "10:00 – 20:00" },
-      { days: "Sábado", time: "10:00 – 19:00" },
+      { days: "Lu — Vi", time: "10:00 – 20:30" },
+      { days: "Sábado", time: "10:00 – 14:00" },
       { days: "Domingo", time: "Cerrado" },
     ],
     phone: "+34 910 734 397",
@@ -31,11 +31,10 @@ const locations = [
     district: "Malasaña · Chamberí",
     city: "Madrid",
     hours: [
-      { days: "Lu — Vi", time: "10:00 – 21:00" },
-      { days: "Sábado", time: "10:00 – 20:00" },
+      { days: "Lu — Sá", time: "10:00 – 21:00" },
       { days: "Domingo", time: "Cerrado" },
     ],
-    phone: "+34 600 000 002",
+    phone: "+34 916 766 303",
     instagram: "@hisbarberia",
     booksy: BOOKSY_URBAN,
     variant: "urban" as const,
@@ -377,7 +376,7 @@ function ContactStrip() {
               </span>
               <span className="text-his-white/10">·</span>
               <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-urban-silver/32">
-                Urban: +34 600 000 002
+                Urban: +34 916 766 303
               </span>
             </div>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 interface HaircutsProps {
@@ -13,24 +14,28 @@ const clasicaCuts = [
     descriptor: "Tijera · Navaja",
     description: "La expresión más elegante del oficio barbero. Tijera y peine, acabado impecable.",
     gradient: "linear-gradient(145deg, #1E3329 0%, #2D4A3E 60%, #3D6B59 100%)",
+    image: "/haircuts/clasica/corte-clasico.png",
   },
   {
     name: "Afeitado Tradicional",
     descriptor: "Ritual completo",
     description: "Navaja de filo, toalla caliente, aceites esenciales. El ritual de siempre.",
     gradient: "linear-gradient(145deg, #0d1611 0%, #1E3329 60%, #2D4A3E 100%)",
+    image: "/haircuts/clasica/afeitado-tradicional.png",
   },
   {
     name: "Corte + Barba",
     descriptor: "El más solicitado",
     description: "El servicio estrella de Classic. Corte a medida y barba perfectamente definida.",
     gradient: "linear-gradient(145deg, #162218 0%, #2D4A3E 50%, #3D6B59 100%)",
+    image: "/haircuts/clasica/corte-barba.png",
   },
   {
     name: "Ritual Completo",
     descriptor: "Experiencia total",
     description: "Corte, barba y tratamiento facial. La experiencia HIS Classic en su máxima expresión.",
     gradient: "linear-gradient(145deg, #0d1611 0%, #1a2e20 50%, #2D4A3E 100%)",
+    image: "/haircuts/clasica/ritual-completo.png",
   },
 ];
 
@@ -40,24 +45,28 @@ const urbanCuts = [
     descriptor: "Al ras · Precisión",
     description: "Degradado hasta la piel. Precisión milimétrica para el resultado más limpio.",
     gradient: "linear-gradient(145deg, #111111 0%, #1A1A1A 60%, #222222 100%)",
+    image: null,
   },
   {
     name: "Taper Fade",
     descriptor: "Clásico contemporáneo",
     description: "Del largo al corto sin fisuras. El equilibrio perfecto entre tradición y modernidad.",
     gradient: "linear-gradient(145deg, #0A0A0A 0%, #141414 60%, #1A1A1A 100%)",
+    image: null,
   },
   {
     name: "Crop Top",
     descriptor: "Moderno · Limpio",
     description: "Contemporáneo, limpio, versátil. El corte favorito de la nueva generación urbana.",
     gradient: "linear-gradient(145deg, #0d0d0d 0%, #1A1A1A 50%, #242424 100%)",
+    image: null,
   },
   {
     name: "Burst Fade",
     descriptor: "Tendencia actual",
     description: "Degradado en arco alrededor de la oreja. Técnica de alta precisión con carácter propio.",
     gradient: "linear-gradient(145deg, #0A0A0A 0%, #111111 50%, #1A1A1A 100%)",
+    image: null,
   },
 ];
 
@@ -116,11 +125,21 @@ export default function Haircuts({ brand }: HaircutsProps) {
                 className="relative overflow-hidden group cursor-default"
                 style={{ aspectRatio: i % 3 === 0 ? "4/3" : "16/10" }}
               >
-                {/* Photo placeholder — gradient background ready for real image */}
-                <div
-                  className="absolute inset-0 transition-transform duration-700 group-hover:scale-105"
-                  style={{ background: cut.gradient }}
-                />
+                {/* Background — real photo or gradient fallback */}
+                {cut.image ? (
+                  <Image
+                    src={cut.image}
+                    alt={cut.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                ) : (
+                  <div
+                    className="absolute inset-0 transition-transform duration-700 group-hover:scale-105"
+                    style={{ background: cut.gradient }}
+                  />
+                )}
 
                 {/* Texture overlay */}
                 <div
@@ -196,12 +215,6 @@ export default function Haircuts({ brand }: HaircutsProps) {
           ))}
         </div>
 
-        {/* Photo placeholder notice */}
-        <AnimatedSection delay={0.3} className="mt-8 text-center">
-          <p className="font-sans text-[9px] tracking-[0.3em] uppercase text-his-white/12">
-            Fotografías reales próximamente · Ejemplos de trabajos reales de HIS Barbería
-          </p>
-        </AnimatedSection>
       </div>
     </section>
   );
