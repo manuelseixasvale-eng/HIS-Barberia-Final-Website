@@ -45,28 +45,28 @@ const urbanCuts = [
     descriptor: "Al ras · Precisión",
     description: "Degradado hasta la piel. Precisión milimétrica para el resultado más limpio.",
     gradient: "linear-gradient(145deg, #111111 0%, #1A1A1A 60%, #222222 100%)",
-    image: null,
+    image: "/haircuts/urban/skin-fade.jpg",
   },
   {
     name: "Taper Fade",
     descriptor: "Clásico contemporáneo",
     description: "Del largo al corto sin fisuras. El equilibrio perfecto entre tradición y modernidad.",
     gradient: "linear-gradient(145deg, #0A0A0A 0%, #141414 60%, #1A1A1A 100%)",
-    image: null,
+    image: "/haircuts/urban/taper-fade.jpg",
   },
   {
     name: "Crop Top",
     descriptor: "Moderno · Limpio",
     description: "Contemporáneo, limpio, versátil. El corte favorito de la nueva generación urbana.",
     gradient: "linear-gradient(145deg, #0d0d0d 0%, #1A1A1A 50%, #242424 100%)",
-    image: null,
+    image: "/haircuts/urban/crop-top.jpg",
   },
   {
     name: "Burst Fade",
     descriptor: "Tendencia actual",
     description: "Degradado en arco alrededor de la oreja. Técnica de alta precisión con carácter propio.",
     gradient: "linear-gradient(145deg, #0A0A0A 0%, #111111 50%, #1A1A1A 100%)",
-    image: null,
+    image: "/haircuts/urban/burst-fade.jpg",
   },
 ];
 

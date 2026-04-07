@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { CLASICA_INTERIOR } from "@/lib/photos";
+import { CLASICA_INTERIOR, URBAN_INTERIOR, OVERLAY_URBAN } from "@/lib/photos";
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -23,42 +23,39 @@ export default function LocationHero({ brand }: LocationHeroProps) {
           : "linear-gradient(160deg, #0A0A0A 0%, #111111 60%, #0A0A0A 100%)",
       }}
     >
-      {/* Photo panel — Classic only, desktop only */}
-      {isClasica && (
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.4, delay: 0.2, ease }}
-          className="absolute inset-y-0 right-0 hidden md:block overflow-hidden"
-          style={{ width: "60%" }}
-        >
-          <Image
-            src={CLASICA_INTERIOR}
-            alt="HIS Barbería Classic interior"
-            fill
-            style={{ objectFit: "cover", objectPosition: "85% 35%" }}
-            priority
-          />
-          {/* Subtle green tint over photo */}
-          <div
-            className="absolute inset-0"
-            style={{ background: "rgba(45,74,62,0.15)" }}
-          />
-        </motion.div>
-      )}
-
-      {/* Green bleed gradient — Classic only, desktop only */}
-      {isClasica && (
-        <div
-          className="absolute top-0 bottom-0 pointer-events-none hidden md:block"
-          style={{
-            left: "20%",
-            right: 0,
-            background:
-              "linear-gradient(to right, rgba(30,51,41,1.00) 0%, rgba(30,51,41,0.92) 22%, rgba(30,51,41,0.60) 48%, rgba(30,51,41,0.18) 74%, rgba(30,51,41,0.00) 100%)",
-          }}
+      {/* Photo panel — both brands, desktop only */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.4, delay: 0.2, ease }}
+        className="absolute inset-y-0 right-0 hidden md:block overflow-hidden"
+        style={{ width: "60%" }}
+      >
+        <Image
+          src={isClasica ? CLASICA_INTERIOR : URBAN_INTERIOR}
+          alt={isClasica ? "HIS Barbería Classic interior" : "HIS Barbería Urban"}
+          fill
+          style={{ objectFit: "cover", objectPosition: isClasica ? "85% 35%" : "65% 45%" }}
+          priority
         />
-      )}
+        {/* Brand tint over photo */}
+        <div
+          className="absolute inset-0"
+          style={{ background: isClasica ? "rgba(45,74,62,0.15)" : OVERLAY_URBAN }}
+        />
+      </motion.div>
+
+      {/* Bleed gradient — both brands, desktop only */}
+      <div
+        className="absolute top-0 bottom-0 pointer-events-none hidden md:block"
+        style={{
+          left: "20%",
+          right: 0,
+          background: isClasica
+            ? "linear-gradient(to right, rgba(30,51,41,1.00) 0%, rgba(30,51,41,0.92) 22%, rgba(30,51,41,0.60) 48%, rgba(30,51,41,0.18) 74%, rgba(30,51,41,0.00) 100%)"
+            : "linear-gradient(to right, rgba(10,10,10,1.00) 0%, rgba(10,10,10,0.92) 22%, rgba(10,10,10,0.60) 48%, rgba(10,10,10,0.18) 74%, rgba(10,10,10,0.00) 100%)",
+        }}
+      />
 
       {/* Texture overlay */}
       <div

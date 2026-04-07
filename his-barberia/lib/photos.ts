@@ -35,16 +35,17 @@ export const GALLERY_PHOTOS = [
   "/gallery/el-ritual.jpg",
   // Classic 03 – Precisión
   "/gallery/precision.webp",
-  // Urban 04 – Fade perfecto
-  `${UNS}/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80`,
-  // Urban 05 – Urban style
-  `${UNS}/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80`,
-  // Urban 06 – Detalle
-  `${UNS}/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80`,
+  // Urban 04 – Diseño artístico
+  "/gallery/urban-04.jpg",
+  // Urban 05 – Reflejo editorial
+  "/gallery/urban-05.jpg",
+  // Urban 06 – Taper perfil
+  "/gallery/urban-06.jpg",
 ];
 
 // ── Location heroes ────────────────────────────────────────────────
 export const CLASICA_INTERIOR = "/photos/clasica-interior.jpg";
+export const URBAN_INTERIOR   = "/photos/urban-interior.jpg";
 
 // ── Overlay values ─────────────────────────────────────────────────
 export const OVERLAY_CLASICA = "rgba(26, 46, 34, 0.75)";
