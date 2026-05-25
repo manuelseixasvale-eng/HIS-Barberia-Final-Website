@@ -64,7 +64,7 @@ export const URBAN_SERVICES = [
       { name: "Corte Caballero y Parches Contorno de Ojos", price: "40 €", description: "" },
       { name: "Afeitado de Cabeza", price: "22 €", description: "" },
       { name: "Rapado con Máquina", price: "15 €", description: "" },
-      { name: "Arreglo de Barba", price: "15 €", description: "" },
+      { name: "Arreglo de Barba", price: "20 €", description: "" },
       { name: "Arreglo de Barba y Contorno de Ojos", price: "30 €", description: "" },
       { name: "Contorno de Ojos", price: "15 €", description: "" },
       { name: "Tratamiento Anticaídas", price: "15 €", description: "" },

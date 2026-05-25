@@ -5,8 +5,8 @@ import Haircuts from "@/components/sections/Haircuts";
 import LocationContact from "@/components/sections/LocationContact";
 
 export const metadata = {
-  title: "HIS Urban — Barbería & Peluquería en Madrid",
-  description: "HIS Urban: barbería y peluquería contemporánea en Malasaña, Madrid. Fades, tapers, coloración y los estilos más modernos de la ciudad.",
+  title: "HIS Barbería Urban — Barbería & Peluquería en Madrid",
+  description: "HIS Barbería Urban: barbería y peluquería contemporánea en Malasaña, Madrid. Fades, tapers y los estilos más modernos de la ciudad.",
 };
 
 export default function UrbanPage() {
